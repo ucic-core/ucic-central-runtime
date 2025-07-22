@@ -1,5 +1,8 @@
-# Giao diện Gradio cơ bản
 import gradio as gr
 
-def greet(name): return f'Xin chào, {name}'
-gr.Interface(fn=greet, inputs='text', outputs='text').launch()
+def create_ui():
+    with gr.Blocks() as demo:
+        gr.Markdown("# 🧠 UCIC Central Runtime")
+        gr.Textbox(label="Test chat phản xạ")
+        gr.Button("Gửi")
+    return demo
