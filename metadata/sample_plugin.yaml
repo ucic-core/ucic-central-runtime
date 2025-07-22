@@ -1,0 +1,3 @@
+plugin_name: sample_plugin
+description: Mẫu plugin phản xạ
+layer: PromptDispatchLayer
